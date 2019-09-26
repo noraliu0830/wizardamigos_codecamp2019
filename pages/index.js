@@ -265,13 +265,13 @@ export default class LandingPage extends Component {
 										<TitleOftheEvent>Co-organizers</TitleOftheEvent>
 										<Name small>Jerry Lin</Name>
 										<Description>Blockchain ecosystem engineer</Description>
-									</CoOrganizer>
+									</CoOrganizer> */}
 									<CoOrganizer>
 										<Photo src="/static/kang.jpg" />
 										<TitleOftheEvent>Co-organizers</TitleOftheEvent>
 										<Name small>Oo Kang Zheng</Name>
 										<Description>Interactive Engineer</Description>
-									</CoOrganizer> */}
+									</CoOrganizer>
 								</PhotoWrapper>
 							</PhotoContainer>
 						</Wrapper>
@@ -280,8 +280,9 @@ export default class LandingPage extends Component {
 						<DateScene>
 							<SubTitle>When & Where</SubTitle>
 							<DateSceneContentWrapper>
-								Chiang Mai Thailand (Oct 20 - Nov 20)
-								<Map2 src="/static/map2.jpg" />
+								Coworking Space Punspace Nimman (Please notice the location might change) Chiang Mai
+								Thailand (Oct 20 - Nov 20)
+								<Map2 src="/static/map2019.png" />
 							</DateSceneContentWrapper>
 						</DateScene>
 					</Wrapper>
