@@ -1,7 +1,7 @@
 module.exports = {
-  exportPathMap: function() {
-    return {
-      '/landingPage': { page: '/landingPage' },
-    }
-  }
-}
+	exportPathMap: function() {
+		return {
+			'/': { page: '/' }
+		};
+	}
+};
