@@ -340,7 +340,10 @@ export default class LandingPage extends Component {
 						<Wrapper>
 							<Contact>
 								<a style={style.link} href="mailto:wizardamigos.codecamp@gmail.com">
-									<EmailIcon style={style.emailIcon} />wizardamigos.codecamp@gmail.com
+									<div>
+										<EmailIcon style={style.emailIcon} />
+									</div>
+									<div>wizardamigos.codecamp@gmail.com</div>
 								</a>
 							</Contact>
 							<Contact>
@@ -349,7 +352,8 @@ export default class LandingPage extends Component {
 									target="_blank"
 									href="https://www.facebook.com/groups/369246343421803/"
 								>
-									<FaceBookIcon style={style.facebookIcon} />WizardAmigos Codecamp on Facebook
+									<FaceBookIcon style={style.facebookIcon} />
+									<div>WizardAmigos Codecamp on Facebook</div>
 								</a>
 							</Contact>
 							<FooterIntro>
@@ -368,8 +372,13 @@ export default class LandingPage extends Component {
 
 const Black = '#030707';
 const Contact = styled.div`
-	display: flex;
+	// display: flex;
 	align-items: center;
+	@media (max-width: 768px) {
+		div {
+			font-size: 4vw;
+		}
+	}
 `;
 const FooterIntro = styled.div`margin-top: 30px;`;
 const Container = styled.div`
@@ -382,10 +391,13 @@ const Wrapper = styled.div`
 	width: 80%;
 	margin: auto;
 	padding: 40px 0;
+	@media (max-width: 768px) {
+		width: 90%;
+	}
 `;
 const Scene1 = styled.div`
 	height: 800px;
-	background-image: linear-gradient(#00000021, #0000009c), url(/static/chiang_mai.jpg);
+	background-image: url('/static/chiang_mai2.jpg');
 	background-size: cover;
 	background-position: center;
 `;
@@ -393,10 +405,11 @@ const Title = styled.div`
 	display: flex;
 	font-size: 60px;
 	justify-content: center;
-	margin: 395px auto 25px;
+	margin: 200px auto 25px;
 	background-color: #181a18b8;
 	@media (max-width: 768px) {
-		font-size: 6vw;
+		// font-size: 6vw;
+		text-align: center;
 	}
 `;
 const ButtonWrapper = styled.div`
@@ -489,8 +502,12 @@ const Scene3 = styled.div`
 const TopicBackground = styled.div`
 	background: rgba(0, 0, 0, .7);
 	margin: auto;
-	padding: 45px;
+	padding: 35px;
 	width: 80%;
+	@media (max-width: 768px) {
+		padding: 0;
+		width: auto;
+	}
 `;
 const CyberNomadSpirit = styled(Scene2)`
   height: 500px;
@@ -615,6 +632,9 @@ const WhatYouWillLearn = styled.div`
 	text-align: left;
 	margin: auto;
 	width: 80%;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 `;
 const Map2 = styled.img`
 	width: 40vw;
