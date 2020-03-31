@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "material-ui": "^0.20.0",
-    "next": "^4.1.4",
+    "next": "^9.3.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scroll": "^1.7.4",
